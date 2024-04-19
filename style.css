@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url("./assets/depositphotos_286857524-stock-photo-top-view-of-tasty-burgers.jpg");
+    background-size: cover;
+    z-index: -1;
+}
+
+.container-buttons {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+button {
+    background-color: #79cb15;
+    border: none;
+    border-radius: 5px;
+    color:#000;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 110px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+ul{
+    list-style: none;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+}
+
+li {
+    border: 3px solid #79cb15;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #0000007d;
+    box-shadow: 1px 0px 5px 3px  #8133ff;
+    
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 9px 9px -1px #ff0000;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+}
+
+.item-price {
+    font-weight: bold;
+    color: #79cb15;
+}
+
+@media(max-width:680px) {
+    button {
+        padding: 5px;
+        width: 100px;
+    }
+
+    li {
+        width: 80%;
+        height: 220px;
+        
+    }
+
+}
+
+@media(max-width:660px) {
+    ul {
+        grid-template-columns: 190px 190px 190px;
+        gap: 10px;
+        margin-left: 50px;
+    }
+}
+@media(max-width:620px) {
+    .container-buttons {
+        gap: 15px;
+    }
+    ul {
+        grid-template-columns: 160px 160px 160px;
+        gap: 15px;
+        margin-left: 50px;
+    }
+    button {
+        padding: 5px;
+        width: 84px;
+    }
+}
+@media(max-width:530px) {
+    ul {
+        grid-template-columns: 130px 130px 130px;
+        gap: 10px;
+        margin-left: 30px;
+    }
+    .container-buttons {
+        height: 100px;
+        gap: 8px;
+    }
+    p {
+        color: #fff;
+        font-size: 15px;
+    }
+    li {
+        height: 175px;
+    }
+}
+@media(max-width:410px) {
+    button {
+        padding: 0px;
+        width: 74px;
+    }
+    ul {
+        grid-template-columns: 120px 120px 120px;
+        gap: 5px;
+        margin-left: 20px;
+    }
+    li {
+        height: 170px;
+    }
+}
+@media(max-width:376px) {
+    button {
+        width: 80px;
+    }
+   
+    li {
+        height: 170px;
+    }
+}
